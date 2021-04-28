@@ -27,7 +27,7 @@ class SplashFragment : Fragment() {
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
         Handler(Looper.getMainLooper()).postDelayed({
-            view.findNavController().navigate(SplashFragmentDirections.actionSplashFragmentToStartFragment())
+            view.findNavController().navigate(SplashFragmentDirections.actionSplashFragmentToHomeFragment())
         }, 3000)
     }
 
