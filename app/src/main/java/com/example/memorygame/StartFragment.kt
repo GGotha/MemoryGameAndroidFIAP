@@ -16,7 +16,7 @@ import androidx.fragment.app.Fragment
 import androidx.navigation.NavOptions
 import androidx.navigation.fragment.findNavController
 import com.example.memorygame.R.drawable.*
-import kotlinx.android.synthetic.main.fragment_game.*
+import kotlinx.android.synthetic.main.fragment_start.*
 import java.util.concurrent.TimeUnit
 
 
@@ -38,7 +38,7 @@ class StartFragment : Fragment() {
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
-        return inflater.inflate(R.layout.fragment_game, container, false)
+        return inflater.inflate(R.layout.fragment_start, container, false)
     }
 
 
