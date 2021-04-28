@@ -6,11 +6,13 @@ import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import androidx.activity.OnBackPressedCallback
 import androidx.databinding.DataBindingUtil
 import androidx.navigation.findNavController
 import com.example.memorygame.data.ASSharedPreferences
 import com.example.memorygame.databinding.FragmentHomeBinding
 import com.example.memorygame.databinding.FragmentStartBinding
+import kotlin.system.exitProcess
 
 
 class HomeFragment : Fragment() {
@@ -22,11 +24,20 @@ class HomeFragment : Fragment() {
         super.onAttach(context)
         sharedPrefs = ASSharedPreferences(context)
         player = sharedPrefs.getPlayer().toString()
+
+
     }
+
+
+
 
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
+
+
+
+
         //arguments?.let {
         //    param1 = it.getString(ARG_PARAM1)
         //    param2 = it.getString(ARG_PARAM2)
@@ -39,7 +50,16 @@ class HomeFragment : Fragment() {
     ): View? {
         // Inflate the layout for this fragment
         bindings = DataBindingUtil.inflate(inflater, R.layout.fragment_home, container, false)
+        requireActivity().onBackPressedDispatcher.addCallback(object : OnBackPressedCallback(true) {
+            override fun handleOnBackPressed() {
+                exitProcess(-1)
+            }
+        })
+
+
         return bindings.root
+
+
 
     }
 
@@ -51,7 +71,7 @@ class HomeFragment : Fragment() {
         bindings.next.setOnClickListener {
             val playerName = bindings.inputPlayer.text.toString()
             savePlayerName(playerName)
-            val action = HomeFragmentDirections.actionHomeFragmentToStartFragment()//
+            val action = HomeFragmentDirections.actionHomeFragmentToStartFragment(playerName)//
             view.findNavController().navigate(action)
         }
 
