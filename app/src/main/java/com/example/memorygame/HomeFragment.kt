@@ -50,11 +50,6 @@ class HomeFragment : Fragment() {
     ): View? {
         // Inflate the layout for this fragment
         bindings = DataBindingUtil.inflate(inflater, R.layout.fragment_home, container, false)
-        requireActivity().onBackPressedDispatcher.addCallback(object : OnBackPressedCallback(true) {
-            override fun handleOnBackPressed() {
-                exitProcess(-1)
-            }
-        })
 
 
         return bindings.root
@@ -76,7 +71,7 @@ class HomeFragment : Fragment() {
         }
 
         bindings.ranking.setOnClickListener {
-            view.findNavController().navigate(R.id.action_homeFragment_to_startFragment)
+            view.findNavController().navigate(R.id.action_startFragment_to_rankingFragment)
         }
     }
 

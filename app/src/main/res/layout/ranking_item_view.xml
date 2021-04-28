@@ -5,38 +5,38 @@
     android:layout_height="wrap_content"
     xmlns:app="http://schemas.android.com/apk/res-auto">
 
-<!--    <TextView-->
-<!--        android:id="@+id/position"-->
-<!--        android:layout_width="wrap_content"-->
-<!--        android:layout_height="wrap_content"-->
-<!--        tools:text="1º"-->
-<!--        android:textSize="24sp"-->
-<!--        android:textStyle="bold"-->
-<!--        android:layout_margin="@dimen/default_margin"-->
-<!--        app:layout_constraintTop_toTopOf="parent"-->
-<!--        app:layout_constraintBottom_toBottomOf="parent"-->
-<!--        app:layout_constraintStart_toStartOf="parent"/>-->
+    <TextView
+        android:id="@+id/position"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        tools:text="1º"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:layout_margin="@dimen/default_margin"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"/>
 
-<!--    <TextView-->
-<!--        android:id="@+id/player"-->
-<!--        android:layout_width="wrap_content"-->
-<!--        android:layout_height="wrap_content"-->
-<!--        app:layout_constraintStart_toEndOf="@+id/position"-->
-<!--        app:layout_constraintTop_toTopOf="@+id/position"-->
-<!--        app:layout_constraintEnd_toEndOf="parent"-->
-<!--        android:layout_marginEnd="@dimen/default_margin"-->
-<!--        app:layout_constraintHorizontal_bias="1.0"-->
-<!--        tools:text="testando"/>-->
+    <TextView
+        android:id="@+id/player"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toEndOf="@+id/position"
+        app:layout_constraintTop_toTopOf="@+id/position"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginEnd="@dimen/default_margin"
+        app:layout_constraintHorizontal_bias="1.0"
+        tools:text="testando"/>
 
-<!--    <TextView-->
-<!--        android:id="@+id/score"-->
-<!--        android:layout_width="wrap_content"-->
-<!--        android:layout_height="wrap_content"-->
-<!--        app:layout_constraintStart_toEndOf="@+id/position"-->
-<!--        app:layout_constraintBottom_toBottomOf="@+id/position"-->
-<!--        app:layout_constraintEnd_toEndOf="parent"-->
-<!--        android:layout_marginEnd="@dimen/default_margin"-->
-<!--        app:layout_constraintHorizontal_bias="1.0"-->
-<!--        tools:text="testando"/>-->
+    <TextView
+        android:id="@+id/score"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toEndOf="@+id/position"
+        app:layout_constraintBottom_toBottomOf="@+id/position"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginEnd="@dimen/default_margin"
+        app:layout_constraintHorizontal_bias="1.0"
+        tools:text="testando"/>
 
 </androidx.constraintlayout.widget.ConstraintLayout>
