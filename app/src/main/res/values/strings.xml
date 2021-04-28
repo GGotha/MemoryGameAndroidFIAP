@@ -1,3 +1,8 @@
 <resources>
     <string name="app_name">Memory Game</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="player_name_label">Nome Jogador:</string>
+    <string name="play_button">Jogar</string>
+    <string name="ranking_btn_label">Top 10</string>
 </resources>
